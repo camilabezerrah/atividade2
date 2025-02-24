@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta CEP - ViaCEP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -19,7 +20,7 @@
         const resultadoDiv = document.getElementById('resultado');
 
         if (!/^\d{8}$/.test(cep)) {
-            resultadoDiv.innerHTML = '<p style="color: red;">Por favor, digite um CEP válido (8 dígitos).</p>';
+            resultadoDiv.innerHTML = '<p style="color: blue;">Por favor, digite um CEP válido (8 dígitos).</p>';
             return;
         }
 
